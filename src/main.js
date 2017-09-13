@@ -20,6 +20,7 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  linkActiveClass: 'active',
   routes
 })
 /* eslint-disable no-new */
@@ -28,6 +29,8 @@ new Vue({
   router,
   render: h => h(App)
 })
+
+// router.go('/goods')
 
 // router.map({
 //   '/goods': {
